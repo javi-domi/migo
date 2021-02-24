@@ -1,6 +1,170 @@
+/*Globales-------------------------------------------------------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
 @font-face {
   font-family: CircularSTD;
   src: url("/Assets/Fonts/circularstd-book.otf");
+}
+:root {
+  --black: #575656;
+  --blue: #a5c8d3;
+  --rosa: #fd7392;
+  --soft-white: #fbf7ee;
+  --soft-black: #b1aeae;
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*Navigation Bar-------------------------------------------------------------------------*/
+#navbar {
+  display: flex;
+  font-family: "Hind", sans-serif;
+  font-size: 18;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+.logo {
+  margin-left: 60px;
+  width: 100%;
+}
+#Grupo_1 {
+  width: 120px;
+  height: auto;
+}
+#Caminho_1:hover,
+#Caminho_2:hover,
+#Caminho_3:hover,
+#Caminho_4:hover {
+  fill: var(--blue);
+  transition: 5ms ease-in-out;
+}
+ul {
+  display: flex;
+  margin-right: 60px;
+}
+li {
+  list-style: none;
+  padding: 0 14px;
+  color: var(--black);
+}
+li:hover {
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  #navbar {
+    display: block;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 20px 0;
+  }
+  .logo {
+    margin: 0;
+  }
+  ul {
+    margin: 0;
+    display: block;
+    text-align: center;
+    padding: 14px 0;
+  }
+  li {
+    margin: 8px 0;
+  }
+}
+/*Hero Section-------------------------------------------------------------------------*/
+#hero {
+  display: flex;
+  margin: auto;
+  align-items: center;
+}
+#herocontent {
+  width: 100%;
+  margin-left: 80px;
+}
+#herocontent h1 {
+  font-family: CircularSTD;
+  font-size: 48px;
+  width: 500px;
+  color: var(--black);
+}
+.description {
+  font-family: "Hind", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black);
+  width: 400px;
+}
+button {
+  border-radius: 40px;
+  padding: 16px 48px;
+  font-size: 16px;
+  color: var(--soft-white);
+  background-color: var(--rosa);
+  border: 0;
+}
+#hero button:hover {
+  background-color: var(--blue);
+  transition: 5ms ease-in-out;
+}
+#heroimage {
+  width: 100%;
+  margin-right: 80px;
+}
+.image {
+  width: 100%;
+  margin-right: 80px;
+}
+@media (max-width: 900px) {
+  #hero {
+    display: block;
+    text-align: center;
+    padding: 0px 20px;
+    width: 600px;
+  }
+  #herocontent {
+    margin: 0;
+    width: 600px;
+  }
+  #herocontent h1 {
+    width: 600px;
+    font-size: 40px;
+  }
+  .description {
+    width: 600px;
+  }
+  .image {
+    width: 100%;
+  }
+  #heroimage {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  #hero {
+    display: block;
+    text-align: center;
+    padding: 0px 20px;
+    width: 400px;
+  }
+  #herocontent {
+    margin: 0;
+    width: 400px;
+  }
+  #herocontent h1 {
+    width: 400px;
+    font-size: 40px;
+  }
+  .description {
+    width: 400px;
+    font-size: 16px;
+  }
+  .image {
+    width: 400px;
+  }
+  #heroimage {
+    width: 400px;
+  }
 }
