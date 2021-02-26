@@ -17,6 +17,25 @@ body {
   margin: 0;
   padding: 0;
 }
+h1 {
+  font-family: CircularSTD;
+  font-size: 48px;
+  width: 500px;
+  color: var(--black);
+}
+h2 {
+  font-family: CircularSTD;
+  width: 500px;
+  font-size: 36px;
+  color: var(--black);
+}
+.description {
+  font-family: "Hind", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--black);
+  width: 400px;
+}
 /*Navigation Bar-------------------------------------------------------------------------*/
 #navbar {
   display: flex;
@@ -50,6 +69,7 @@ li {
   list-style: none;
   padding: 0 14px;
   color: var(--black);
+  cursor: pointer;
 }
 li:hover {
   font-weight: bold;
@@ -77,25 +97,13 @@ li:hover {
 /*Hero Section-------------------------------------------------------------------------*/
 #hero {
   display: flex;
+  padding-top: 120px;
   margin: auto;
   align-items: center;
 }
 #herocontent {
-  width: 100%;
-  margin-left: 80px;
-}
-#herocontent h1 {
-  font-family: CircularSTD;
-  font-size: 48px;
   width: 500px;
-  color: var(--black);
-}
-.description {
-  font-family: "Hind", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  color: var(--black);
-  width: 400px;
+  margin-right: 80px;
 }
 button {
   border-radius: 40px;
@@ -104,18 +112,23 @@ button {
   color: var(--soft-white);
   background-color: var(--rosa);
   border: 0;
+  cursor: pointer;
 }
 #hero button:hover {
   background-color: var(--blue);
   transition: 5ms ease-in-out;
 }
 #heroimage {
-  width: 100%;
-  margin-right: 80px;
+  width: 120%;
+  margin-right: 60px;
+  margin-left: 80px;
 }
 .image {
   width: 100%;
-  margin-right: 80px;
+  margin: auto;
+}
+.flip {
+  transform: scaleX(-1);
 }
 @media (max-width: 900px) {
   #hero {
@@ -128,7 +141,7 @@ button {
     margin: 0;
     width: 600px;
   }
-  #herocontent h1 {
+  h1 {
     width: 600px;
     font-size: 40px;
   }
@@ -140,6 +153,7 @@ button {
   }
   #heroimage {
     width: 100%;
+    margin: auto;
   }
 }
 @media (max-width: 600px) {
@@ -153,7 +167,7 @@ button {
     margin: 0;
     width: 400px;
   }
-  #herocontent h1 {
+  h1 {
     width: 400px;
     font-size: 40px;
   }
@@ -166,5 +180,78 @@ button {
   }
   #heroimage {
     width: 400px;
+  }
+}
+/*Product Section-------------------------------------------------------------------------*/
+#product {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 80px;
+}
+#social {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+}
+#producto {
+  margin-top: 120px;
+  display: flex;
+  align-items: center;
+}
+.illustration {
+  width: 700px;
+}
+@media (max-width: 900px) {
+  #product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 600px;
+    margin: auto;
+    margin-top: 120px;
+    overflow: hidden;
+  }
+  #social {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #producto {
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    width: 600px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 600px) {
+  #product {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 120px;
+  }
+  #social {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #producto {
+    display: flex;
+    flex-direction: column;
+  }
+  h2 {
+    width: 400px;
+    font-size: 28px;
+    margin: auto;
+  }
+  .illustration {
+    margin: auto;
+    width: 100%;
+  }
+  .image {
+    width: 400px;
+    margin: auto;
   }
 }
