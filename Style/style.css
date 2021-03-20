@@ -65,8 +65,10 @@ ul {
   display: flex;
   margin-right: 60px;
 }
-li {
+li,
+a {
   list-style: none;
+  text-decoration: none;
   padding: 0 14px;
   color: var(--black);
   cursor: pointer;
@@ -105,7 +107,7 @@ li:hover {
   width: 500px;
   margin-right: 80px;
 }
-button {
+.btn {
   border-radius: 40px;
   padding: 16px 48px;
   font-size: 16px;
@@ -114,7 +116,7 @@ button {
   border: 0;
   cursor: pointer;
 }
-#hero button:hover {
+.btn:hover {
   background-color: var(--blue);
   transition: 5ms ease-in-out;
 }
