@@ -35,7 +35,9 @@ h2 {
   font-weight: 400;
   color: var(--black);
   width: 400px;
+  margin-bottom: 20px;
 }
+
 /*Navigation Bar-------------------------------------------------------------------------*/
 #navbar {
   display: flex;
@@ -115,6 +117,7 @@ li:hover {
   background-color: var(--rosa);
   border: 0;
   cursor: pointer;
+  font-family: CircularSTD;
 }
 .btn:hover {
   background-color: var(--blue);
@@ -256,4 +259,76 @@ li:hover {
     width: 400px;
     margin: auto;
   }
+}
+/*------------------------------Planes-------------------------*/
+#planes {
+  background-color: var(--blue);
+  margin-top: 60px;
+  padding: 100px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+#cards {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-bottom: 80px;
+}
+.plan-card {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 80px;
+}
+.plan-card:last-child {
+  margin-right: 0;
+}
+.plan-card,
+p,
+span {
+  font-family: "Space Mono";
+  font-weight: bold;
+  color: var(--black);
+  font-size: 16px;
+  margin-top: 8px;
+  margin-bottom: 0px;
+}
+.plan-card,
+span {
+  font-size: 36px;
+  margin-top: 0;
+  line-height: 1.5;
+  position: relative;
+}
+.icono {
+  width: 110px;
+  height: 110px;
+}
+.icono,
+.bici {
+  width: 160px;
+  height: 110px;
+}
+.btn-card {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  position: absolute;
+  top: 100%;
+}
+.btn-card:hover {
+  border: 2px solid var(--rosa);
+  color: var(--rosa);
+}
+#simuladores {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: auto;
 }
