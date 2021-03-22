@@ -11,6 +11,7 @@
   --rosa: #fd7392;
   --soft-white: #fbf7ee;
   --soft-black: #b1aeae;
+  scroll-behavior: smooth;
 }
 body {
   box-sizing: border-box;
@@ -61,7 +62,7 @@ h2 {
 #Caminho_3:hover,
 #Caminho_4:hover {
   fill: var(--blue);
-  transition: 5ms ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 ul {
   display: flex;
@@ -74,9 +75,11 @@ a {
   padding: 0 14px;
   color: var(--black);
   cursor: pointer;
+  transition: all 0.15s ease-in-out;
 }
-li:hover {
+#navbar a:hover {
   font-weight: bold;
+  transition: all 0.15s ease-in-out;
 }
 @media (max-width: 600px) {
   #navbar {
@@ -121,7 +124,7 @@ li:hover {
 }
 .btn:hover {
   background-color: var(--blue);
-  transition: 5ms ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 #heroimage {
   width: 120%;
@@ -192,6 +195,8 @@ li:hover {
   display: flex;
   flex-direction: column;
   margin: 100px 80px;
+  border: 2px solid #575656;
+  align-items: center;
 }
 #social {
   margin-top: 120px;
@@ -204,7 +209,7 @@ li:hover {
   align-items: center;
 }
 .illustration {
-  width: 700px;
+  width: 100%px;
 }
 @media (max-width: 900px) {
   #product {
@@ -277,7 +282,7 @@ li:hover {
   margin-bottom: 80px;
 }
 .plan-card {
-  width: 240px;
+  width: 260px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -320,6 +325,7 @@ span {
 }
 .btn-card:hover {
   border: 2px solid var(--rosa);
+  background: transparent;
   color: var(--rosa);
 }
 #simuladores {
@@ -331,4 +337,18 @@ span {
   display: flex;
   flex-direction: column;
   width: auto;
+}
+#correo {
+  border: none;
+  border-bottom: 2px solid var(--black);
+  background: transparent;
+  font-family: "Space Mono";
+  font-size: 14px;
+  color: #575656d2;
+  margin-top: 40px;
+  line-height: 1.5;
+}
+
+#correo:focus {
+  outline: none;
 }
